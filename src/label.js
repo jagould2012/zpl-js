@@ -14,8 +14,8 @@ Label.prototype = {
 commands.map(function(defn) {
     var command = function() {
         var args = new Array(defn.fn.length).map((val, idx) => arguments[idx] || "");
-        console.log('arguments: '+args.length);
-        console.log('fn: '+defn.fn);
+        //console.log('arguments: '+args.length);
+        //console.log('fn: '+defn.fn);
         this.text += defn.fn(...arguments);
         return this;
     };
